@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Finder</h1>
+    <p>Get the current weather for your location or any city worldwide.</p>
+    <div class="search-container">
+      <input type="text" id="location-input" placeholder="Enter city name...">
+      <button id="search-btn">Search</button>
+      <button id="location-btn">Use My Location</button>
+    </div>
+    <div id="weather-info" class="weather-info hidden">
+      <h2 id="city-name"></h2>
+      <div class="weather-details">
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="weather-description"></p>
+        <p id="humidity"></p>
+        <p id="wind-speed"></p>
+      </div>
+    </div>
+    <div id="error-message" class="error-message hidden"></div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
